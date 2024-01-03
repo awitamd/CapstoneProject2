@@ -1,0 +1,81 @@
+html {
+    background-color: blueviolet;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    width: 80%;
+    display: grid;
+    grid-template-areas:
+     "profil profil"
+     "intro intro"
+     "about skill"
+     "edu lang";
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: auto;
+     gap: 20px;
+     padding: 50px;
+     box-sizing: border-box;
+}
+.profile-img {
+    margin-top: 90px;
+    background-image: url(assets/profile.png);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    grid-area: profil;
+    justify-self: center;
+    border: 2px solid white;
+    box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+}
+
+.panel-intro {
+    grid-area: intro;
+    color: bisque;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.panel-intro .intro1 {
+    font-size: 2.5em;
+}
+.panel-intro .intro2 {
+    font-size: 1.5em;
+}
+
+.about {
+    grid-area: about;
+}
+.skill {
+    grid-area: skill;
+}
+
+.about , .language {
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    color: bisque;
+    background-color: purple;
+    border-radius: 5px;
+}
+
+.skill , .education {
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    background-color: beige;
+    border-radius: 5px;
+}
+
+.education {
+    grid-area: edu;
+}
+
+.language {
+    grid-area: lang;
+}
