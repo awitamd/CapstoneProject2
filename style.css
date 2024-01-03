@@ -1,3 +1,13 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@200&display=swap');
+</style>
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sarabun', sans-serif;
+}
+
 html {
     background-color: blueviolet;
 }
@@ -7,7 +17,15 @@ body {
     justify-content: center;
 }
 
+.p {
+    margin-top: 10px;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
 header {
+    margin-top: -50px;
     width: 80%;
     display: grid;
     grid-template-areas:
@@ -17,13 +35,13 @@ header {
      "edu lang";
      grid-template-columns: 1fr 1fr;
      grid-template-rows: auto;
-     gap: 20px;
+     gap: 50px 30px;
      padding: 50px;
      box-sizing: border-box;
 }
-.profile-img {
-    margin-top: 90px;
-    background-image: url(assets/profile.png);
+.perfil-png {
+    margin-top: 200px;
+    background-image: url(assets/perfil.png);
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -36,11 +54,11 @@ header {
 }
 
 .panel-intro {
+    margin-top: 20px;
+    margin-bottom: 20px;
     grid-area: intro;
     color: bisque;
     justify-self: center;
-    display: flex;
-    justify-content: center;
 }
 
 .panel-intro .intro1 {
@@ -48,6 +66,7 @@ header {
 }
 .panel-intro .intro2 {
     font-size: 1.5em;
+    text-align: center;
 }
 
 .about {
@@ -78,4 +97,14 @@ header {
 
 .language {
     grid-area: lang;
+}
+
+
+.work-container {
+    max-width: 50px;
+    display: grid;
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+    width: 900px;
+    height: 400px;
 }
