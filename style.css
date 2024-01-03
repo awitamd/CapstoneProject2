@@ -9,7 +9,7 @@
 }
 
 html {
-    background-color: blueviolet;
+    background-color: #14284d;
 }
 
 body {
@@ -80,8 +80,9 @@ header {
     box-shadow: 0 0 10px black;
     padding: 20px;
     color: bisque;
-    background-color: purple;
+    background-color: #3f0741;
     border-radius: 5px;
+    grid-template-columns: 66% auto;
 }
 
 .skill , .education {
@@ -89,6 +90,7 @@ header {
     padding: 20px;
     background-color: beige;
     border-radius: 5px;
+    grid-template-columns: 66% auto;
 }
 
 .education {
@@ -101,10 +103,22 @@ header {
 
 
 .work-container {
-    max-width: 50px;
-    display: grid;
-    margin-left: var(--mb-2);
-    margin-right: var(--mb-2);
-    width: 900px;
-    height: 400px;
+    display:grid;
+    grid-template-columns: 66% auto;grid-template-columns: 66% auto;
+    padding: 4em 4em;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.button {
+    color: black;
+    border: 1px solid black;
+    background-color: grey;
+    font-size: larger;
+    padding: 10px;
+}
+
+.home__social {
+    color: black;
+    padding-top: 25px;
+    font-size: 32px;
